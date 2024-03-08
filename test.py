@@ -38,8 +38,6 @@ train_data = Data(root_dir="./train", transform=data_transform)
 class_names = train_data.class_names
 model = customCNN_v5(num_classes=len(class_names))
 
-# 모델 학습
-# 이전에 훈련시킨 코드를 이곳에 넣으세요.
 
 # 테스트 데이터 예측
 predicted_classes = predict(model, test_images, class_names)
