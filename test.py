@@ -42,6 +42,3 @@ model = customCNN_v5(num_classes=len(class_names))
 # 테스트 데이터 예측
 predicted_classes = predict(model, test_images, class_names)
 
-# 결과 출력
-for idx, label in enumerate(predicted_classes):
-    print(f"TEST_{idx:03}: {label}")
